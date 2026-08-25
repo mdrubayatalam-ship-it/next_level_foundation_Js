@@ -1,3 +1,4 @@
+// Conversion of height from foot-iches to meter
 
 function heightTometer(foot,inches){
     const footConv =  12 * foot;
@@ -13,7 +14,7 @@ function bmi(weight, height){
 }
 
 const myBmi = bmi(72,heightTometer(5,8));
-console.log("Your Current BMI:",bmi(72,heightTometer(5,8)));
+console.log("Your Current BMI:",myBmi.toFixed(2));
 // now condition
 
 if(myBmi >= 18.5 && myBmi <= 24.9){
